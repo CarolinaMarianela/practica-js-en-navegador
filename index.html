@@ -13,26 +13,32 @@
       <p class="title">Control de Gastos</p>
       <div class="saving">
         <p class="subtitle">TU AHORRO</p>
-        <p> 65¢</p>
+        <p class="total-saving" id="totalSavingMoney"> 65¢</p>
       </div>
       <div class="income-expense">
         <div class="income-box">
           <p>INGRESO</p>
+          <p id="incomeMoney">10</p>
         </div>
-        <div class="expense-box"></div>
+        <div class="v-line"></div>
+        <div class="expense-box">
           <p>GASTO</p>
+          <p id="expeseMoney">-10</p>
+        </div>
       </div>
       <div class="transaction-form">
         <p class="title"> Añadir Nueva Transacción</p>
+        <hr>
         <form>
           <div>
           <label>Concepto</label>
-          <input type="text" id="concept" placeholder="Añade concepto">
+          <input type="text" id="concept" placeholder="Añade concepto...">
           </div>
           <div>
           <label>Cantidad</label>
-          <input type="number" id="concept" placeholder="Añade concepto">
+          <input type="number" id="amount" placeholder="Añade monto...">
           </div>
+          <input type="submit" id="submit" value="submit">
         </form>
       </div>
     </section>
@@ -40,6 +46,7 @@
       <div>
         <p class="title">Historial</p>
       </div>
+      <hr>
     </section>
   </div>
 <script src="./index.js"></script>

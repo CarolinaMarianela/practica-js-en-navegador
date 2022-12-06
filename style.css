@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@100&display=swap');
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
-
-.app-container{
-  background-color: #F6F5F6;
+body{
   display: flex;
-  height: 100%;
-  width: 100%;
   justify-content: center;
-
 }
-.transaccion{
-  margin-left: 10vh;
+.app-container{
+  display: flex;
+  height: max-content;
+  width: 70%;
+  justify-content: center;
+  background-color: #F6F5F6;
+  border: solid;
+  border-radius: 3%;
+  border-color: #a64dff;
+  font-family: 'Barlow', sans-serif;
 
 }
 .title{
@@ -21,17 +25,28 @@
   text-align: center;
   margin-top: 10vh;
   font-size: x-large;
+  font-weight: bold;
 }
 .subtitle{
-  margin:2vh 2vh;
+  margin: 10px 0px 10px;
+}
+.v-line{
+ width: 1px;
+ background-color: #d9b3ff;
+ height:100%;
 }
 .income-expense{
   background-color: white;
   display: flex;
   padding: 8vh;
   border-radius: 1vh;
+  height: 5%;
   justify-content: space-between;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+}
+.expense-box{
+  display: block;
+
 }
 .saving{
   margin-right: 10vh;
@@ -43,4 +58,47 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5vh;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d9b3ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d9b3ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #d9b3ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  #a64dff;
+}
+hr{
+  height: 1px;
+  background-color: #d9b3ff;
+  width: 100%;
+  margin: 10px 0px 10px;
+}
+.total-saving{
+ margin: 10px 0px 10px;
+ font-size: xx-large;
 }
