@@ -11,13 +11,14 @@ body{
 .app-container{
   display: flex;
   height: max-content;
-  width: 70%;
+  width: 60%;
   justify-content: center;
   background-color: #F6F5F6;
   border: solid;
   border-radius: 3%;
   border-color: #a64dff;
   font-family: 'Barlow', sans-serif;
+  margin: 20px;
 
 }
 .title{
@@ -48,11 +49,21 @@ body{
   display: block;
 
 }
+.box-cantidad{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
 .saving{
   margin-right: 10vh;
 }
 .historial{
     margin-left: 10vh;
+    margin-right: 10vh;
+}
+.transaccion{
+   margin-left: 10vh;
+    margin-right: 10vh;
 }
 .transaction-form{
   display: flex;
@@ -101,4 +112,38 @@ hr{
 .total-saving{
  margin: 10px 0px 10px;
  font-size: xx-large;
+}
+/* #printRecord{
+  width: 100%;
+  background-color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+} */
+
+.historyAmmount div {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d9b3ff;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+}
+.historyAmmount button {
+    cursor: pointer;
+    background-color: #a64dff;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+}
+.amount-container {
+  display: flex
 }
